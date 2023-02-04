@@ -2,12 +2,12 @@
 #include <time.h>
 
 int main(){
-    int i = 0;
+    long i = 0;
     clock_t start, end;
 
     int32_t int1 = 1962, int2 = 2002, int_sum = 0;
     start = clock();
-    while (i < 10000){
+    while (i < 100000000000){
         /* 10^10 additions (of integer constants)*/
         int_sum = int1 + int2;
         i ++;
