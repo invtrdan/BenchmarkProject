@@ -14,8 +14,8 @@ int main(){
     }
     end = clock();
     printf("32-bit Integer Operation Benchmark");
-    printf("Reference Time: 100 seconds");
-    printf("Time Taken: %lf seconds",(double)(end - start) / CLOCKS_PER_SEC);
+    printf("\nReference Time: 100 seconds");
+    printf("\nTime Taken: %lf seconds",(double)(end - start) / CLOCKS_PER_SEC);
 
     return 0;
 }
