@@ -50,7 +50,10 @@ int main(){
   }
     
   end_time = clock();
-    
+  
+  // Close the files
+  fclose(fp_read);
+  fclose(fp_write);
     
   return 0;
 }
