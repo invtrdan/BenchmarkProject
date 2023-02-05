@@ -18,6 +18,12 @@ int main(){
     // Write a block of data
     fwrite(buf, BLOCK_SIZE, 1, fp);
   }
+    
+  // Close the file
+  fclose(fp);
+    
+  clock_t start_time, end_time;
+  FILE *fp_read, *fp_write;
   
   return 0;
 }
