@@ -31,6 +31,13 @@ int main(){
     printf("Error opening file for reading\n");
     return 1;
   }
+    
+  // Open the output.bin file for writing
+  fp_write = fopen("output.bin", "wb");
+  if (!fp_write) {
+    printf("Error opening file for writing\n");
+    return 1;
+  }
   
   return 0;
 }
