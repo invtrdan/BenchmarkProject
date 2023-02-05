@@ -38,6 +38,11 @@ int main(){
     printf("Error opening file for writing\n");
     return 1;
   }
-  
+    
+  start_time = clock();
+    
+  end_time = clock();
+    
+    
   return 0;
 }
