@@ -28,14 +28,14 @@ int main(){
   // Open the input.bin file for reading
   fp_read = fopen("input.bin", "rb");
   if (!fp_read) {
-    printf("Error opening file for reading\n");
+    printf("\nError opening file for reading");
     return 1;
   }
     
   // Open the output.bin file for writing
   fp_write = fopen("output.bin", "wb");
   if (!fp_write) {
-    printf("Error opening file for writing\n");
+    printf("\nError opening file for writing");
     return 1;
   }
     
@@ -54,6 +54,9 @@ int main(){
   // Close the files
   fclose(fp_read);
   fclose(fp_write);
+    
+  printf("\nReference Time: 250 seconds");
+  printf("\nTime taken to read and write %d bytes: %f seconds", FILE_SIZE, (double)(end_time - start_time) / CLOCKS_PER_SEC);
     
   return 0;
 }
