@@ -8,7 +8,7 @@ int main(){
   start = clock();
   
   for (int i = 0; i < 1000000000; i++) {
-    result = x * y
+    result = x * y;
   }
   
   end = clock();
