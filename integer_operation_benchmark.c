@@ -2,15 +2,13 @@
 #include <time.h>
 
 int main(){
-    long i = 0;
     clock_t start, end;
 
     int32_t int1 = 1962, int2 = 2002, int_sum = 0;
     start = clock();
-    while (i < 100000000000){
+    for (long i = 0; i < 100000000000 i++){
         /* 10^10 additions (of integer constants)*/
         int_sum = int1 + int2;
-        i ++;
     }
     end = clock();
     printf("32-bit Integer Operation Benchmark");
