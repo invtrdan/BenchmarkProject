@@ -2,13 +2,14 @@
 #include <time.h>
 
 int main(){
-  double x = 225452315454.54654682, y = 2354356785.534658748, result;
+  double x = 285454.5482, y = 2356785.5348, result;
   clock_t start, end;
   
   start = clock();
   
-  for (int i = 0; i < 1000000000; i++) {
-    result = x * y;
+  for (long i = 0; i < 100000000000; i++) {
+    /* 10^10 additions (of integer constants)*/
+    result = int1 + int2;
   }
   
   end = clock();
