@@ -10,6 +10,11 @@ int main(){
         /* 10^10 additions (of integer constants)*/
         int_sum = int1 + int2;
     }
+    for (long i = 0; i < 100000000000; i ++)
+    {
+        /*5 x 10^9 multiplications (of integer constants)*/
+        int product = int1 * int2;
+    }
     end = clock();
     printf("32-bit Integer Operation Benchmark");
     printf("\nReference Time: 100 seconds");
