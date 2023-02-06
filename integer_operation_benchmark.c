@@ -4,7 +4,7 @@
 int main(){
     clock_t start, end;
 
-    int32_t int1 = 1962, int2 = 2002, int_sum = 0;
+    int32_t int1 = 1962, int2 = 2002, int_sum = 0, int_product = 0, int_quotient = 0;
     start = clock();
     for (long i = 0; i < 100000000000 i++){
         /* 10^10 additions (of integer constants)*/
@@ -13,7 +13,7 @@ int main(){
     for (long i = 0; i < 5000000000; i ++)
     {
         /*5 x 10^9 multiplications (of integer constants)*/
-        int product = int1 * int2;
+        int_product = int1 * int2;
     }
     end = clock();
     printf("32-bit Integer Operation Benchmark");
