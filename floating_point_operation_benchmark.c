@@ -8,8 +8,13 @@ int main(){
   start = clock();
   
   for (long i = 0; i < 100000000000; i++) {
-    /* 10^10 additions (of integer constants)*/
+    /* 10^10 additions (of floating constants)*/
     result = int1 + int2;
+  }
+  
+  for (long i = 0; i < 5000000000; i ++){
+    /*5 x 10^9 multiplications (of floating constants)*/
+    result = int1 * int2;
   }
   
   end = clock();
