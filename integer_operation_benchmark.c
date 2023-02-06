@@ -15,6 +15,12 @@ int main(){
         /*5 x 10^9 multiplications (of integer constants)*/
         int_product = int1 * int2;
     }
+    
+    for (long i = 0; i < 2000000000; i++){
+        /* 2 X 10^9 divisions (of integer constants)*/
+        int_quotient = int2 / int1;
+    }
+    
     end = clock();
     printf("32-bit Integer Operation Benchmark");
     printf("\nReference Time: 100 seconds");
