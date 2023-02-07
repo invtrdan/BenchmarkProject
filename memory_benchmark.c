@@ -4,6 +4,7 @@
 
 #define SIZE 500000
 #define BYTES_PER_ELEMENT 4
+#define NUM_ELEMENTS 50000
 
 int main(){
   int i;
