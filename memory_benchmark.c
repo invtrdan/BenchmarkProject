@@ -28,9 +28,8 @@ int main(){
   end = clock();
   printf("Reference Time: 100 sseconds");
   printf("\nTime taken to read and write from array elements: %lf seconds\n", ((double) (end - start)) / CLOCKS_PER_SEC);
-
-  free(data);
   
+//   free(data);
   return 0;
 }
   
