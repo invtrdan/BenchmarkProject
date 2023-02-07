@@ -13,6 +13,12 @@ int main(){
     printf("Error allocating memory!\n");
     return 1;
   }
+  start = clock();
+  for (int a = 0; a < 100000; a++){
+    // Write to array elements
+    for (int i = 0; i < 50000; i++) {
+      data[i] = i;
+    }
   
   return 0;
 }
