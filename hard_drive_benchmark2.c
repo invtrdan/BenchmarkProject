@@ -13,6 +13,10 @@ int main(){
     printf("\nError opening the 'input.bin' file for writing.");
     return 1;
   }
+  for (int i = 0; i < FILE_SIZE / BLOCK_SIZE; i++) {
+    // Write a block of data
+    fwrite(buf, BLOCK_SIZE, 1, fp);
+  }
   return 0;
 }
 
