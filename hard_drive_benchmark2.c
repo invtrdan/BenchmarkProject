@@ -48,6 +48,14 @@ int main(){
   }
   
   end_time = clock();
+  
+  // Close the files
+  fclose(fp_read);
+  fclose(fp_write);
+    
+  printf("\nReference Time: 250 seconds");
+  printf("\nTime taken to read and write %d bytes: %f seconds", FILE_SIZE, (double)(end_time - start_time) / CLOCKS_PER_SEC);
+    
     
   return 0;
 }
