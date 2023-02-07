@@ -22,6 +22,16 @@ int main(){
     
   clock_t start_time, end_time;
   FILE *fp_read, *fp_write;
+
+  // Open the input.bin file for reading
+  fp_read = fopen("input.bin", "rb");
+  if (!fp_read) {
+    printf("\nError opening file for reading");
+    return 1;
+  }
+    
+  
+  
   return 0;
 }
 
