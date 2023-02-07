@@ -16,9 +16,14 @@ int main(){
   start = clock();
   for (int a = 0; a < 100000; a++){
     // Write to array elements
-    for (int i = 0; i < 50000; i++) {
+    for (int i = 0; i < 50000; i++){
       data[i] = i;
     }
+    int num_sum = 0;
+    for (int i = 0; i < 50000; i++){
+      // Read from array elements, add to sum
+      num_sum += data[i];
+      }
   
   return 0;
 }
