@@ -36,6 +36,8 @@ int main(){
     printf("\nError opening file for writing");
     return 1;
   }
+  
+  start_time = clock();
     
   
   return 0;
