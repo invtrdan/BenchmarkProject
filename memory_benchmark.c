@@ -19,11 +19,16 @@ int main(){
     for (int i = 0; i < 50000; i++){
       data[i] = i;
     }
-    int num_sum = 0;
-    for (int i = 0; i < 50000; i++){
-      // Read from array elements, add to sum
-      num_sum += data[i];
-      }
+   int num_sum = 0;
+   for (int i = 0; i < 50000; i++){
+     // Read from array elements, add to sum
+     num_sum += data[i];
+     }
+   end = clock();
+   printf("Reference Time: 100 sseconds")
+   printf("\nTime taken to read and write from array elements: %lf seconds\n", ((double) (end - start)) / CLOCKS_PER_SEC);
+
+   free(data);
   
-  return 0;
+   return 0;
 }
