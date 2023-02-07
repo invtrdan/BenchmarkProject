@@ -30,7 +30,13 @@ int main(){
     return 1;
   }
     
-  
+  // Open the output.bin file for writing
+  fp_write = fopen("output.bin", "wb");
+  if (!fp_write) {
+    printf("\nError opening file for writing");
+    return 1;
+  }
+    
   
   return 0;
 }
