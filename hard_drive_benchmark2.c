@@ -7,5 +7,12 @@
 int main(){
   FILE *fp;
   char buf[BLOCK_SIZE];
+  // Open the input.bin file for writing
+  fp = fopen("input.bin", "wb");
+  if (!fp){
+    printf("\nError opening the 'input.bin' file for writing.");
+    return 1;
+  }
   return 0;
 }
+
