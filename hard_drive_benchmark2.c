@@ -38,8 +38,17 @@ int main(){
   }
   
   start_time = clock();
-    
   
+  for (int i = 0; i < FILE_SIZE / BLOCK_SIZE; i++){
+    // Read 100 bytes from input.bin
+    fread(buf, BLOCK_SIZE, 1, fp_read);
+    
+    // Write 100 bytes to output.bin
+    fwrite(buf, BLOCK_SIZE, 1, fp_write);
+  }
+  
+  end_time = clock();
+    
   return 0;
 }
 
